@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Ready - GitHub Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Navigation Bar -->
+        <nav class="top-navigation">
+            <div class="nav-content">
+                <a href="/" class="brand-logo">
+                    <svg width="32" height="32" viewBox="0 0 16 16" class="logo-icon">
+                        <path fill-rule="evenodd" d="M8 0.198a8 8 0 0 0-2.528 15.597c0.4 0.074 0.547-0.174 0.547-0.386 0-0.19-0.007-0.693-0.011-1.36-2.226 0.483-2.695-1.073-2.695-1.073-0.364-0.924-0.89-1.17-0.89-1.17-0.727-0.497 0.055-0.487 0.055-0.487 0.804 0.057 1.227 0.826 1.227 0.826 0.714 1.223 1.873 0.87 2.33 0.665 0.072-0.517 0.279-0.87 0.508-1.07-1.777-0.202-3.644-0.888-3.644-3.954 0-0.873 0.312-1.587 0.824-2.147-0.083-0.202-0.357-1.017 0.078-2.12 0 0 0.671-0.215 2.2 0.82a7.673 7.673 0 0 1 2.004-0.27c0.68 0.003 1.366 0.092 2.004 0.27 1.528-1.035 2.198-0.82 2.198-0.82 0.437 1.103 0.163 1.918 0.08 2.12 0.513 0.56 0.823 1.274 0.823 2.147 0 3.074-1.87 3.75-3.652 3.948 0.287 0.247 0.543 0.735 0.543 1.482 0 1.07-0.01 1.933-0.01 2.196 0 0.214 0.145 0.463 0.55 0.384A8.001 8.001 0 0 0 8 0.198z"></path>
+                    </svg>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="/features" class="nav-item">Features</a></li>
+                    <li><a href="/security" class="nav-item">Security</a></li>
+                    <li><a href="/enterprise" class="nav-item">Enterprise</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <section class="main-content">
+            <div class="content-container">
+                <article class="download-card">
+                    <div class="card-glow"></div>
+
+                    <!-- Card Header -->
+                    <header class="card-header">
+                        <div class="publisher-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="badge-icon">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#58a6ff"/>
+                            </svg>
+                            <span>Verified</span>
+                        </div>
+                        <h1 class="publisher-name">GitHub Archive</h1>
+                    </header>
+
+                    <!-- Card Body -->
+                    <div class="card-content">
+                        <h2 class="main-heading">Preparing Download</h2>
+
+                        <!-- Circular Timer -->
+                        <div class="timer-section">
+                            <div class="countdown-circle">
+                                <svg class="circle-svg" viewBox="0 0 100 100">
+                                    <circle class="circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="circle-progress" cx="50" cy="50" r="45" id="circleProgress"/>
+                                </svg>
+                                <div class="countdown-text">
+                                    <div class="countdown-number" id="timeDisplay">5</div>
+                                    <div class="countdown-label">sec</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security Badges -->
+                        <div class="security-row">
+                            <div class="mini-badge">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" fill="#3fb950"/>
+                                    <path d="M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="#0d1117"/>
+                                </svg>
+                                <span>Verified</span>
+                            </div>
+                            <div class="mini-badge">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L4 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-8-3z" fill="#3fb950" opacity="0.8"/>
+                                    <circle cx="12" cy="12" r="3" fill="#0d1117"/>
+                                </svg>
+                                <span>Protected</span>
+                            </div>
+                            <div class="mini-badge">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#58a6ff"/>
+                                </svg>
+                                <span>Encrypted</span>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="progress-wrapper">
+                            <div class="progress-container">
+                                <div class="progress-fill" id="progressFill">
+                                    <div class="progress-shine"></div>
+                                </div>
+                            </div>
+                            <div class="progress-info">
+                                <span id="progressPercent">0%</span>
+                                <span class="redirect-text">Auto-start in <strong id="countdownNum">5</strong>s</span>
+                            </div>
+                        </div>
+
+                        <!-- Action Button -->
+                        <button id="downloadBtn" class="primary-button">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="button-icon">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4m4-5l5 5m0 0l5-5m-5 5V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Download Now</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="footer-content">
+                <span class="copyright-text">© 2026 GitHub, Inc.</span>
+                <div class="footer-links">
+                    <a href="/terms" class="footer-link">Terms</a>
+                    <a href="/privacy" class="footer-link">Privacy</a>
+                    <a href="/security" class="footer-link">Security</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
